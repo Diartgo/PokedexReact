@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # Ajusta a tu rama principal si es diferente
+      - master  # Ajusta a tu rama principal si es diferente
 
 jobs:
   build:
@@ -16,7 +16,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '16'  # Asegúrate de que coincida con tu versión de Node.js
+          node-version: '16.2'  # Asegúrate de que coincida con tu versión de Node.js
 
       - name: Install dependencies
         run: npm install
